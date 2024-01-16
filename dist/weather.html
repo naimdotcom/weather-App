@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/wind.png" type="image/png">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="../src/output.css">
+</head>
+
+<body class="bg-[#222]">
+
+    <div class="w-11/12 max-w-[470px] bg-gradient-to-tl from-violet-500 to-teal-400 
+         text-white mt-24 mb-0 mx-auto rounded-2xl py-10 px-9 text-center">
+        <div class="w-full flex items-center justify-between">
+            <input class="serch border-0 outline-0 bg-[#ebfffc] text-[#555] py-3 px-6 h-16 rounded-3xl flex-1 mr-4
+        text-[16px]" type="text" placeholder="Enter city name" spellcheck="false">
+            <button class="serchBtn border-0 outline-0 bg-[#ebfffc] rounded-full 
+        w-14 h-14 cursor-pointer flex items-center justify-center "><img class="w-4 h-4" src="./images/search.png"
+                    alt="search.png"></button>
+        </div>
+    <div>
+
+
+    <div class="flex flex-col justify-center items-center">
+
+        <img class="weather-icon w-[170px] mt-[30px]" src="./images/rain.png" alt="">
+        <h1 class="temp text-7xl font-medium">blank</h1>
+        <h2 class="cityName text-[45px] font-normal mt-[-10px]">Undefined</h2>
+
+        <div class="flex items-center justify-between py-0 px-5 mt-[50px] w-full">
+
+            <div class="flex items-center text-left">
+                <img class="w-10 mr-3" src="./images/humidity.png" alt="">
+                <div class="">
+                    <p class="humidity text-3xl mt-[-6px] font-medium">blank</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="flex items-center text-left">
+                <img class="w-10 mr-3" src="./images/wind.png" alt="">
+                <div>
+                    <p class="wind text-3xl mt-[-6px] font-medium">blank</p>
+                    <p >Wind Speed</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+<!-- <script src="../dist/img.js"></script> -->
+<script src="../dist/weather.js"></script>
+
+</body>
+<!-- 
+ https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
+ https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+ https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+ 863242cf2b1d357e6093d9a4df19a4b
+
+ -->
+</html>
